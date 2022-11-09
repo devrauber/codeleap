@@ -9,6 +9,7 @@ interface Input1Props{
     required?: any
     name?: string;
     control?: Control<any>;
+    onChange?: any
 };
 
 const Input1: React.FC<Input1Props> = function ({
@@ -17,10 +18,11 @@ const Input1: React.FC<Input1Props> = function ({
     placeholder,
     required,
     name,
-    control
+    control,
+    onChange
 }){
     return(
-        <Input control={control} style={style} name={name} placeholder={placeholder} required={required}>
+        <Input control={control} style={style} name={name} placeholder={placeholder} required={required} onChange={onChange}>
             {children}
         </Input>
     )

@@ -12,7 +12,7 @@ const Buttons: React.FC<ButtonProps> = function ({
     style,
     children,
     onClick,
-    disabled
+    disabled,
 }){
     return(
         <Button style={style} onClick={onClick} disabled={disabled}>
